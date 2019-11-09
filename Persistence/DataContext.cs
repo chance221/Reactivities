@@ -7,7 +7,7 @@ namespace Persistence
     public class DataContext : DbContext
     {
         //beliw notice how the DataContext Constructor inherits from the base DbContext by using the syntax : base(options)
-        public DataContext(DbContextOptions options) : base(options) 
+        public DataContext(DbContextOptions<DataContext> options) : base(options) 
         {
         }
 

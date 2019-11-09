@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {}
+    "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
+    "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ckelly\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -32,6 +32,7 @@ namespace API
             {
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
             });
+            
             services.AddControllers();
         }
 

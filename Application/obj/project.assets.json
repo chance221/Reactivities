@@ -4073,11 +4073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\ckelly\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\obj\\",
+      "outputPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4096,11 +4096,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj"
             },
-            "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "c:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj"
+            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj"
             }
           }
         }
