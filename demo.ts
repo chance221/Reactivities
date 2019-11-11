@@ -8,7 +8,7 @@ data = 42
 
 You can declare an interface and make certain properties optional for when they are inherited from the interface
 */
-interface ICar{
+export interface ICar{
     color:string;
     model: string;
     topSpeed? : number    
@@ -32,3 +32,6 @@ const car2: ICar = {
 const multiply = (x: number, y: number): number => {
     return x*y;
 }
+
+
+export const cars = [car1, car2]

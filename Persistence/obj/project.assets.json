@@ -4048,23 +4048,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ckelly\\.nuget\\packages\\": {},
+    "C:\\Users\\cjkel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\ckelly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\obj\\",
+      "projectPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Persistence\\Persistence.csproj",
+      "packagesPath": "C:\\Users\\cjkel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ckelly\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cjkel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4077,8 +4077,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Domain\\Domain.csproj"
             }
           }
         }

@@ -4039,23 +4039,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ckelly\\.nuget\\packages\\": {},
+    "C:\\Users\\cjkel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\ckelly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\API\\obj\\",
+      "projectPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\api\\API.csproj",
+      "packagesPath": "C:\\Users\\cjkel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ckelly\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cjkel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4068,8 +4068,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj"
+            "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\cjkel\\Documents\\Thinkful\\Reactivities\\Application\\Application.csproj"
             }
           }
         }
