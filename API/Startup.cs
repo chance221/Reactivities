@@ -22,6 +22,9 @@ namespace API
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        readonly string MyAllowAnyOrigins = "_myAllowAnyOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -32,8 +35,19 @@ namespace API
             {
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
             });
-            
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy(MyAllowAnyOrigins, 
+                builder =>
+                {
+                    builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("*");
+                }
+                );
+            });
+
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +57,7 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(MyAllowAnyOrigins);
 
             app.UseHttpsRedirection();
 
