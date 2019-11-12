@@ -14,6 +14,8 @@ namespace Persistence
         //You are basically setting up a property that will make the connection to the class object you are mapping to in the Domain. Make sure you reference this in your using statement at the top. 
         public DbSet<Value> values { get; set; }
 
+        public DbSet<Snip> Snip { get; set; }
+
         //we now can use entity framework to query this in our database.
 
         //Be sure to add this as a service to the startup class (dependency injection) in the ConfigureServices container
