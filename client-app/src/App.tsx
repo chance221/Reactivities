@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import axios from 'axios';
+import './App.css';
+import { Header, Icon, List } from 'semantic-ui-react';
+
+class App extends Component {
+  state = {
+    values:[]
+  }
+
+  componentDidMount(){
+    axios.get('http://localhost:5000/api/values')
+      .then((response)=>{
+        
+        this.setState({
+          values:response.data
+        })
+        
+      })
+    
+  }
+
+  render(){
+    return (
+      <div className="center" >
+        <Header as ='h2' icon>
+          <Icon name ='cut'/>
+            Snippix
+          <Header.Subheader>
+            Save Time. Save Your Code.
+          </Header.Subheader>
+        </Header>
+          <List divided relaxed>
+            {this.state.values.map((value:any)=>
+
+              <List.Item key={value.id}>
+                <List.Icon name='dna' verticalAlign='middle'/>
+                <List.Content>
+                  {value.name}
+                </List.Content>
+              </List.Item>
+
+            )}
+          </List>
+      </div>
+    );
+  }
 }
+  
+
 
 export default App;
