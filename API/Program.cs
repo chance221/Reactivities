@@ -42,9 +42,10 @@ namespace API
                         this imports any required migrations to the database. If there is no databse, this creates one based off of the migrations file created when we ran
                         dotnet ef migrations add InitialCreate -p Persistence/ -s API 
                      */
-                    context.Database.Migrate(); 
+                    context.Database.Migrate();
+                    Seed.SeedData(context);
                 }
-                catch(Exception ex) //if something 
+                catch(Exception ex) //if something goes wrong with the try block do this. 
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred during migration");
