@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
-
 import axios from 'axios';
-import './App.css';
+import './styles.css';
 import { Header, Icon, List } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
-    values:[]
+    snips:[]
   }
 
   componentDidMount(){
-    axios.get('http://localhost:5000/api/values')
+    axios.get('http://localhost:5000/api/snips')
       .then((response)=>{
         
         this.setState({
-          values:response.data
+          snips:response.data
         })
         
       })
@@ -32,12 +31,12 @@ class App extends Component {
           </Header.Subheader>
         </Header>
           <List divided relaxed>
-            {this.state.values.map((value:any)=>
+            {this.state.snips.map((snip:any)=>
 
-              <List.Item key={value.id}>
+              <List.Item key={snip.id}>
                 <List.Icon name='dna' verticalAlign='middle'/>
                 <List.Content>
-                  {value.name}
+                  {snip.title}
                 </List.Content>
               </List.Item>
 
