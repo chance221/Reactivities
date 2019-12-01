@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect, SyntheticEvent } from 'react';
 import './styles.css';
 import { Container } from 'semantic-ui-react';
 import { ISnip } from '../models/snip';
 import { NavBar } from '../../features/nav/NavBar';
 import { SnipsDashboard } from '../../features/snips/dashboard/SnipsDashboard';
+import agent from '../api/agent';
+import { Loading } from './Loading';
 
 
 
@@ -34,6 +35,12 @@ const App = () => {
   const [snips, setSnips] = useState<ISnip[]>([])
 
   const [selectedSnip, setSelectedSnip] = useState<ISnip|null>(null);
+
+  const [loading, setLoading] = useState(true)
+
+  const [submitting, setSubmitting] = useState(false)
+
+  const [target, setTarget] = useState('');
   
   const handleSelectedSnip = (id: string) => {
     setSelectedSnip(snips.filter(s => s.id === id)[0])
@@ -51,33 +58,45 @@ const App = () => {
   // }
 
   const handleCreateSnip = (snip: ISnip) =>{
-    setSnips([...snips, snip])
-    setSelectedSnip(snip);
-    setEditMode(false);
+    setSubmitting(true);
+    agent.Snips.create(snip).then(()=>{
+      setSnips([...snips, snip])
+      setSelectedSnip(snip);
+      setEditMode(false);
+    }).then( ()=>setSubmitting(false) )
   }
 
   const handleEditSnip = (snip: ISnip) =>{
-    setSnips([...snips.filter(s => s.id ! !==snip.id), snip])
-    setSelectedSnip(snip);
-    setEditMode(false)
+    setSubmitting(true);
+    agent.Snips.update(snip).then(() =>{
+      setSnips([...snips.filter(s => s.id ! !==snip.id), snip])
+      setSelectedSnip(snip);
+      setEditMode(false)
+    }).then(()=>setSubmitting(false))
   }
 
-  const handleDeleteSnip = (id: string) =>{
-    setSnips([...snips.filter(s =>s.id !==id)])
+  const handleDeleteSnip = (event: SyntheticEvent<HTMLButtonElement>, id: string) =>{
+    setSubmitting(true);
+    setTarget(event.currentTarget.name)
+    agent.Snips.delete(id).then(()=>{
+      setSnips([...snips.filter(s =>s.id !==id)])
+    }).then(()=>setSubmitting(false))
+    
   }
 
 const [editMode, setEditMode] = useState(false);
 
-  //use effect is thr lifecyle components rolled into one. It runs componentDidMount, componentDidUpdate, and componentWillUnmount
+  //use effect is three lifecyle components rolled into one. It runs componentDidMount, componentDidUpdate, and componentWillUnmount
   useEffect( () => {
-    axios
-      .get<ISnip[]>('http://localhost:5000/api/snips')
+  agent.Snips.list()
       .then(response=>{
-        setSnips(response.data)
-      });
+        setSnips(response)
+      }).then( () =>
+          setLoading(false));
     }, [] //this empty array ensures that we don't call the useState every time the screen rerenderes evrytime to component render
   );
 
+  if(loading) return<Loading content='Loading Snips...'/>
   //this is where the jsx begins
  
   return (
@@ -95,6 +114,8 @@ const [editMode, setEditMode] = useState(false);
           createSnip = {handleCreateSnip}
           editSnip = {handleEditSnip}
           deleteSnip = {handleDeleteSnip}
+          submitting = {submitting}
+          target={target}
         />
       </Container>
       </div>

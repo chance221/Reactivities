@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 import { Button, Segment } from 'semantic-ui-react'
 import { ISnip } from '../../../app/models/snip'
 
 interface IProps{
   snips:ISnip[];
   selectSnip: (id:string) => void;
-  deleteSnip: (id: string) => void;
+  deleteSnip: (e:SyntheticEvent<HTMLButtonElement>, id: string) => void;
+  submitting: boolean;
+  target: string;
 }
 
 
 
-export const SnipList: React.FC<IProps> = ({snips, selectSnip, deleteSnip}) => {
+export const SnipList: React.FC<IProps> = ({snips, selectSnip, deleteSnip, submitting, target}) => {
   return (
     
     <Segment className="clearing">
@@ -41,10 +43,12 @@ export const SnipList: React.FC<IProps> = ({snips, selectSnip, deleteSnip}) => {
               content='View' 
               color='blue'/>
             <Button 
-              onClick={()=> deleteSnip(snip.id)} 
+              onClick={(e)=> deleteSnip(e, snip.id)} 
               floated="right" 
               content='Delete' 
-              color='red'/>
+              color='red'
+              loading={target === snip.id && submitting}
+              name={snip.id}/>
             <span>Category</span>
           </div>
           </div>

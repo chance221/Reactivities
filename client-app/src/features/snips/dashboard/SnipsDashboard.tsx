@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 import { List } from 'semantic-ui-react'
 import { ISnip } from '../../../app/models/snip'
 import { SnipList } from './SnipList'
@@ -14,7 +14,9 @@ interface IProps{
   setSelectedSnip: (snip: ISnip | null) => void;
   createSnip: (snip:ISnip) => void;
   editSnip:  (snip: ISnip) =>void;
-  deleteSnip: (id: string) => void;
+  deleteSnip: (e:SyntheticEvent<HTMLButtonElement>, id: string) => void;
+  submitting: boolean;
+  target: string;
 }
 
 export const SnipsDashboard: React.FC<IProps> = ({
@@ -26,7 +28,9 @@ export const SnipsDashboard: React.FC<IProps> = ({
   setSelectedSnip,
   editSnip,
   createSnip,
-  deleteSnip
+  deleteSnip,
+  submitting,
+  target
 }) => {
   return (
     
@@ -36,7 +40,9 @@ export const SnipsDashboard: React.FC<IProps> = ({
             <SnipList 
               snips = {snips} 
               selectSnip = {selectSnip}
-              deleteSnip = {deleteSnip}/>
+              deleteSnip = {deleteSnip}
+              submitting = {submitting}
+              target = {target}/>
         </List>
       </div>
       <div className= "eight wide column">
@@ -54,6 +60,7 @@ export const SnipsDashboard: React.FC<IProps> = ({
             snip={selectedSnip!} 
             createSnip = {createSnip}
             editSnip = {editSnip}
+            submitting = {submitting}
             />
           )}
       </div>

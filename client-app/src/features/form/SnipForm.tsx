@@ -11,7 +11,8 @@ interface IProps{
   setEditMode: (editMode:boolean) => void;
   snip: ISnip;
   createSnip: (snip:ISnip) => void;
-  editSnip:  (snip: ISnip) =>void
+  editSnip:  (snip: ISnip) =>void;
+  submitting: boolean;
 }
 
 // const dropOptions = [
@@ -43,7 +44,7 @@ interface IProps{
 
 
 // TODO add logic to pretify code later
-export const SnipForm: React.FC<IProps> = ({setEditMode, snip: initialFormState, createSnip, editSnip}) => {
+export const SnipForm: React.FC<IProps> = ({setEditMode, snip: initialFormState, createSnip, editSnip, submitting}) => {
   
   const initializeForm = () =>{
     if (initialFormState){
@@ -131,7 +132,7 @@ export const SnipForm: React.FC<IProps> = ({setEditMode, snip: initialFormState,
             value={snip.code}
           />
           
-          <Button floated='right' positive type='submit' content='Submit'/>
+          <Button loading={submitting} floated='right' positive type='submit' content='Submit'/>
           <Button onClick={( () => setEditMode(false))} floated='right' type='button' content='Cancel' color='grey'/>
 
         </Form>
