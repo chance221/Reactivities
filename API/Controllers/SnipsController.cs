@@ -20,6 +20,7 @@ namespace API.Controllers
     */
 
     [Route("api/[controller]")]
+    [ApiController]
     public class SnipsController : ControllerBase
     {
         //we now need to impliment the controllers methods by pulling in the request from the handler. In this case we are using mediatR
@@ -43,7 +44,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Unit>> Create([FromBody] Create.Command command)
+        public async Task<ActionResult<Unit>> Create(Create.Command command)
         {
             return await _mediator.Send(command);
         }

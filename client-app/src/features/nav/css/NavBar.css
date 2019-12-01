@@ -1,0 +1,15 @@
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.left{
+  text-align: left;
+  left: 0px;
+}
+
+.dif{
+  background-color: grey;
+  color: teal;
+}

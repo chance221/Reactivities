@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(204, 204, 204)
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.snipListContainer{
+  
+  margin-top: 5vh;
+  
+}
+
+.ui.three.item.inverted.menu.left{
+  background-image: linear-gradient(
+    135deg, 
+    rgb(245, 241, 241) 20%, 
+    rgb(99, 131, 233) 69%,
+    rgb(23, 21, 148) 89%) !important;
 }

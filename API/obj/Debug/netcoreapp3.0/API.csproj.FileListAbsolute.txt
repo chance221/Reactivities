@@ -66,17 +66,14 @@ C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Micro
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
-C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Remotion.Linq.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_green.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\System.Interactive.Async.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -104,3 +101,6 @@ C:\Users\cjkel\OneDrive\Documents\Reactivities\api\obj\Debug\netcoreapp3.0\API.R
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\obj\Debug\netcoreapp3.0\API.csproj.CopyComplete
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\obj\Debug\netcoreapp3.0\API.dll
 C:\Users\cjkel\OneDrive\Documents\Reactivities\api\obj\Debug\netcoreapp3.0\API.pdb
+C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\Remotion.Linq.dll
+C:\Users\cjkel\OneDrive\Documents\Reactivities\api\bin\Debug\netcoreapp3.0\System.Interactive.Async.dll
