@@ -50,7 +50,7 @@ export const SnipsDetails: React.FC<IProps> = ({snip, setEditMode, setSelectedSn
           <i className="code icon"></i>
           Code
         </h6>
-        <p className = "code">{snip.code}</p>
+        <pre className = "prettyprint">{snip.code}</pre>
       </div>
       <div className="extra content">
         <Button.Group widths={2}>

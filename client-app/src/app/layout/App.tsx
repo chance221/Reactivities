@@ -21,7 +21,7 @@ Now we can use intellisense to access the different properties defined in our IS
 
 Now we get rid of class components completely to instead use react hooks. Hooks allow us to use state, and lifecycle
 methods without creating a class(or rather using just a functional component). In order to do this we need
-to get rid of they typical class component methods and use hooks. we get rid of set state for use state
+to get rid of they typical class component methods and use hooks. we get rid of setState for useState
 we need to import useState from react (we no longer need components from the module). We also change the component itself 
 into an function by creating it using const instead of extending the class component. We also cn define the
 use state with the type ISnip and an empty array as this is what will house the info from the API call.
@@ -51,11 +51,6 @@ const App = () => {
     setSelectedSnip(null);
     setEditMode(true);
   }
-
-  // const handleCloseCreateForm = () =>{
-  //   setSelectedSnip(null);
-  //   setEditMode(false);
-  // }
 
   const handleCreateSnip = (snip: ISnip) =>{
     setSubmitting(true);

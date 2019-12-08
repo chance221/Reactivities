@@ -15,15 +15,16 @@ namespace API
 {
 
     /*
-        This part is a little different than the tutorial as I had to change it around to make it work for my version of dotnet core
+        I had to change it around to make it work for my version of dotnet core
+        
         Here is where I found the code https://stackoverflow.com/questions/57745481/unable-to-create-an-object-of-type-mycontext-for-the-different-patterns-suppo
-        The commented out stuff is what was presented from the tutorial.
+        
         Also had to add a reference to Microsoft.EntityFrameworkCore.Design to the API project 
     */
     public class Program
     {
         public static void Main(string[] args)
-        {   /*this is where it differs greatly from the example. We create a variable that holds the host. We dont need to build it here as we 
+        {   /*Create a variable that holds the host. We dont need to build it here as we 
             are building it using the IWebHost interface and why build is commented out*/
             var host = BuildWebHost(args);
 
@@ -52,9 +53,7 @@ namespace API
                 }
             }
 
-            host.Run(); //this runs the 
-
-            //BuildWebHost(args).Run();
+            host.Run(); 
         }
 
         
@@ -63,12 +62,7 @@ namespace API
             .UseStartup<Startup>()
             .Build();
 
-        // public static IHostBuilder CreateHostBuilder(string[] args) =>
-        //     Host.CreateDefaultBuilder(args)
-        //         .ConfigureWebHostDefaults(webBuilder =>
-        //         {
-        //             webBuilder.UseStartup<Startup>();
-        //         });
+        
 
     }
 }

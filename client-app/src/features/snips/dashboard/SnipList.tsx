@@ -22,7 +22,7 @@ export const SnipList: React.FC<IProps> = ({snips, selectSnip, deleteSnip, submi
         <div className="content">
           <a className="header" href="#top">{snip.title}</a>
           <div className="meta">
-            <span>Language:{snip.language}</span>
+            <span>Language: {snip.language}</span>
           </div>
           <div className="meta">
             <span>Description</span>
@@ -31,7 +31,7 @@ export const SnipList: React.FC<IProps> = ({snips, selectSnip, deleteSnip, submi
             <p>{snip.description}</p>
           </div>
           <div className="meta">
-            <span>Code</span>
+            <code>Code</code>
           </div>
           <div className="description">
             <p>{snip.code}</p>
