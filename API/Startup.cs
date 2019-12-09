@@ -20,13 +20,39 @@ namespace API
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+
+        // public void ConfigureDevelopmentServices(IServiceCollection services)
+        // {
+        //     services.AddDbContext<DataContext>(opt =>
+        //     {
+        //         opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
+        //     });
+
+        //     ConfigureServices(services);
+        // }
+
+        // public void ConfigureProducionServices(IServiceCollection services)
+        // {
+        //     services.AddDbContext<DataContext>(opt =>
+        //     {
+        //         opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
+        //     });
+
+        //     ConfigureServices(services);
+        // }
+
+
         public void ConfigureServices(IServiceCollection services)
         {
             //here we are crating the data context by adding it as a service
             services.AddDbContext<DataContext>(opt =>
             {
-                opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
+                opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
             });
+            // services.AddDbContext<DataContext>(opt =>
+            // {
+            //     opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection")); //We are pointing to the configuration file to look for the default connection. this configuration file will be appsettings.json 
+            // });
             //because we are using MediatR in our classes to handle request it needs to be injected into the startup
             //This one is weird because you need to pass in the handlers asymbly. You don't need to do this for every handler as 
             //C# will know to look for all other handler's assymbly in this place
@@ -54,6 +80,10 @@ namespace API
 
             app.UseHttpsRedirection();
 
+            app.UseDefaultFiles();
+            
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -61,6 +91,7 @@ namespace API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }

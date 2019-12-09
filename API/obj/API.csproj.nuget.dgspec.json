@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\api\\API.csproj": {}
+    "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\api\\API.csproj": {
+    "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\api\\API.csproj",
+        "projectPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\cjkel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\api\\obj\\",
+        "outputPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -244,6 +244,10 @@
               "target": "Package",
               "version": "[2.2.6, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[2.2.6, )"
@@ -253,6 +257,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             }
           },
           "imports": [

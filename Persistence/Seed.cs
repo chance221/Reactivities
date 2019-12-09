@@ -19,9 +19,9 @@ namespace Persistence
                     {
                         Title = "My First Snip",
                         Description = "A little code to keep to myself",
-                        Category = "Server Development",
+                        Category = "Random Number Generation",
                         Language = "C#",
-                        Code = "propf id the shortcut to create a property",
+                        Code = "Random rnd = new Randomm();",
                     },
                     new Snip
                     {
@@ -45,7 +45,7 @@ namespace Persistence
                         Description = "Code code CODE",
                         Category = "MDNS",
                         Language = "HTML, CSS, JavaScript",
-                        Code = "function treasure() {cod goes here}",
+                        Code = "function treasure() {code goes here}",
                     },
                     new Snip
                     {
