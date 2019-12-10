@@ -20,7 +20,7 @@ namespace Persistence
                         Title = "My First Snip",
                         Description = "A little code to keep to myself",
                         Category = "Random Number Generation",
-                        Language = "C#",
+                        Language = "JavaScript",
                         Code = "Random rnd = new Randomm();",
                     },
                     new Snip
@@ -44,7 +44,7 @@ namespace Persistence
                         Title = "My Fourth Snip",
                         Description = "Code code CODE",
                         Category = "MDNS",
-                        Language = "HTML, CSS, JavaScript",
+                        Language = "HTML",
                         Code = "function treasure() {code goes here}",
                     },
                     new Snip

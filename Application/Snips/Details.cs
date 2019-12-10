@@ -15,6 +15,7 @@ namespace Application.Snips
             public Guid Id { get; set; }
         }
 
+
         //We then pass the Query Object to the handler. We create a field to hold the context. The context can then be passed to the 
         //handler constructor, wihch is setting the field value equal to the DataContext. That data context is then used in the Handle
         //method that accepts the Query object(that houses the id). It then makes the connection to the database via _context, then runs

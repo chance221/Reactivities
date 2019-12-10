@@ -4,8 +4,6 @@ C:\Users\ckelly\source\repos\Reactivities\Persistence\bin\Debug\netstandard2.0\P
 C:\Users\ckelly\source\repos\Reactivities\Persistence\bin\Debug\netstandard2.0\Domain.dll
 C:\Users\ckelly\source\repos\Reactivities\Persistence\bin\Debug\netstandard2.0\Domain.pdb
 C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.csprojAssemblyReference.cache
-C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
-C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
 C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CopyComplete
 C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.dll
 C:\Users\ckelly\source\repos\Reactivities\Persistence\obj\Debug\netstandard2.0\Persistence.pdb

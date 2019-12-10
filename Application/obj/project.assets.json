@@ -4130,23 +4130,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cjkel\\.nuget\\packages\\": {},
+    "C:\\Users\\ckelly\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\cjkel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Application\\obj\\",
+      "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\ckelly\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\cjkel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ckelly\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4159,11 +4159,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\cjkel\\OneDrive\\Documents\\Reactivities\\Persistence\\Persistence.csproj"
+            "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\ckelly\\source\\repos\\Reactivities\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -4198,7 +4198,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

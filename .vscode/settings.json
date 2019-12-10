@@ -21,7 +21,7 @@
               "user": "root", "password": "Neressa221!",
 
               "dir": "/var/snippx",
-              "mappings": 
+              "mappings": {
                   "api/publish/**": "/"
               }
           }
